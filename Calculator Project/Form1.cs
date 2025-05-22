@@ -258,11 +258,7 @@ namespace Calculator_Project
             }
             else if (CanRepeatEqual)
             {
-                double Temp = PrevNumber;
-                PrevNumber = TotalResult;
-                CurrentNumber = Temp;
-
-                TotalResult = Calculator(PrevNumber, CurrentNumber, CurrentOperation);
+                TotalResult = Calculator(TotalResult, CurrentNumber, CurrentOperation);
             }
             else
             {
